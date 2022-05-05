@@ -318,14 +318,16 @@
                   Kìm tuốt dây SATA 91201
                 </div>
                 <div class="card-action flex items-center text-[14px]">
-                  <div class="flex flex-col items-center flex-1">
+                  <div class="flex flex-col items-center flex-1 add-to-cart">
                     <div class="flex items-center gap-x-[5px]">
                       <ion-icon name="cart"></ion-icon>
                       <span> Thêm vào </span>
                     </div>
                     <span> giỏ hàng </span>
                   </div>
-                  <div class="flex flex-col items-center flex-1">
+                  <div
+                    class="flex flex-col items-center flex-1 add-to-wish-list"
+                  >
                     <div class="flex items-center gap-x-[5px]">
                       <ion-icon name="heart"></ion-icon>
                       <span> Add to </span>
@@ -394,7 +396,7 @@
     <div
       class="flex items-center flex-col lg:flex-row gap-[25px] container mx-auto my-[40px]"
     >
-      <div class="flex-1 relative">
+      <div class="flex-1 relative type-hover">
         <img
           src="./images/sec1.jpg"
           class="w-full h-auto object-cover"
@@ -414,7 +416,7 @@
           </a>
         </div>
       </div>
-      <div class="flex-1 relative">
+      <div class="flex-1 relative type-hover">
         <img
           src="./images/sec2.jpg"
           class="w-full h-auto object-cover"
@@ -434,7 +436,7 @@
           </a>
         </div>
       </div>
-      <div class="flex-1 relative">
+      <div class="flex-1 relative type-hover">
         <img
           src="./images/sec3.jpg"
           class="w-full h-auto object-cover"
@@ -464,21 +466,27 @@
         <span> Tổng hợp các loại dụng cụ dùng cho phòng khuôn </span>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
-        <div class="border">
+        <div class="border flex flex-col justify-between">
           <img src="./images/pd1.jpg" alt="pd" />
-          <div class="pb-[15px]">
+          <div class="">
             <div class="text-center text-[18px] my-[8px]">
               Kìm tuốt dây SATA 91201
             </div>
-            <div class="card-action flex items-center text-[14px]">
-              <div class="flex flex-col items-center flex-1">
+            <div
+              class="card-action flex justify-center items-center text-[14px]"
+            >
+              <div
+                class="flex flex-col items-center flex-1 add-to-cart py-[15px]"
+              >
                 <div class="flex items-center gap-x-[5px]">
                   <ion-icon name="cart"></ion-icon>
                   <span> Thêm vào </span>
                 </div>
                 <span> giỏ hàng </span>
               </div>
-              <div class="flex flex-col items-center flex-1">
+              <div
+                class="flex flex-col justify-center items-center flex-1 add-to-wish-list py-[15px]"
+              >
                 <div class="flex items-center gap-x-[5px]">
                   <ion-icon name="heart"></ion-icon>
                   <span> Add to </span>

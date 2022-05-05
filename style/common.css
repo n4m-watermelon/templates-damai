@@ -36,4 +36,35 @@ body {
   border-radius: 5px;
   background-color: #555;
 }
+
+.add-to-wish-list:hover {
+  background: #dd1f26;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background: #27b6d4;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.type-hover {
+  overflow: hidden;
+}
+
+.type-hover:hover img {
+  -webkit-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.type-hover:hover div {
+  bottom: 14%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 /*# sourceMappingURL=common.css.map */
