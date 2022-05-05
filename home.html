@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="border-b">
+        <div
+          class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-[15px]"
+        >
+          <div
+            class="header_contact flex flex-col sm:flex-row items-center gap-x-[25px]"
+          >
+            <div class="flex items-center gap-x-[5px] text-[12px]">
+              <ion-icon
+                name="location-outline"
+                class="text-[#27B6D4]"
+              ></ion-icon>
+              <span>Bắc Ninh, Việt Nam </span>
+            </div>
+            <div class="flex items-center gap-x-[5px] text-[12px]">
+              <ion-icon name="mail-outline" class="text-[#27B6D4]"></ion-icon>
+              <span>thietbicongnghiepanphuoc@gmail.com </span>
+            </div>
+            <div class="flex items-center gap-x-[5px] text-[12px]">
+              <ion-icon name="call-outline" class="text-[#27B6D4]"></ion-icon>
+              <span>+84965383193 </span>
+            </div>
+          </div>
+          <div
+            class="header_logo flex items-center gap-x-[15px] text-[14px] text-[#27B6D4]"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="my-[22px] flex flex-col sm:flex-row gap-y-[20px] items-center justify-end inline-block container mx-auto"
+      >
+        <div class="border py-[8px] text-[14px]">
+          <div class="flex items-center">
+            <select class="focus:outline-none pl-[15px] max-w-[170px] px-[5px]">
+              <option value="">All Categories</option>
+              <option value="56">Bulong - Ốc vít - bolts</option>
+              <option value="53">Chốt đẩy - Ty đẩy SKD61</option>
+              <option value="57">Dầu mỡ hóa chất</option>
+              <option value="65">Đồng nhôm các loại</option>
+              <option value="70">Dụng cụ cầm tay Sata</option>
+              <option value="55">Dụng cụ đồ mài</option>
+              <option value="64">Dụng cụ khí nén</option>
+              <option value="50">Dụng Cụ Phòng Khuôn</option>
+              <option value="54">Lò xo - Khóa khuôn (Parting Lock)</option>
+              <option value="66">Lưỡi dao</option>
+              <option value="63">Mitutoyo</option>
+              <option value="51">Mũi Khoan - Phay - Taro</option>
+              <option value="52">Nút Nhấn - Công Tắc</option>
+              <option value="61">Omron</option>
+              <option value="39">Slider Product</option>
+              <option value="67">SMC</option>
+              <option value="68">Thiết bị khác</option>
+              <option value="58">Trợ động cơ</option>
+              <option value="62">Vòng bi - nam châm</option>
+              <option value="60">Yaskawa</option>
+              <option value="59">Yokogawa - Airtac</option>
+            </select>
+            <div class="flex items-center ml-[12px]">
+              <input
+                placeholder="Bạn muốn tìm sản phẩm gì?"
+                class="focus:outline-none px-[5px] min-w-[240px] border-r"
+                type="text"
+              />
+              <ion-icon name="search-outline" class="px-[13px]"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex items-center bg-[#000000] text-white px-[15px] py-[13px] ml-[33px]"
+        >
+          <div class="flex flex-col text-[12px] border-r pr-[15px]">
+            <span> SHOPPING ITEM </span>
+            <span> 0d 0 items </span>
+          </div>
+          <ion-icon class="text-[26px] pl-[15px]" name="cart"></ion-icon>
+        </div>
+      </div>
+      <div
+        class="menu flex items-center justify-between container mx-auto bg-[#27B6D4] text-white text-[15px]"
+      >
+        <ul class="items-center hidden lg:flex">
+          <li class="px-[18px] py-[13px] menu__active">
+            <ion-icon name="home"></ion-icon>
+          </li>
+          <li class="px-[18px]">Giới thiệu</li>
+          <li class="px-[18px]">Cửa hàng</li>
+          <li class="px-[18px]">Tin tức</li>
+          <li class="px-[18px]">Khuyến mãi</li>
+          <li class="px-[18px]">Liên hệ</li>
+        </ul>
+        <div
+          class="bg-[#DD1F26] flex items-center py-[13px] px-[22px] gap-x-[10px]"
+        >
+          <ion-icon name="heart"></ion-icon>
+          <span> Sản phẩm yêu thích (0)</span>
+        </div>
+      </div>
+    </header>
+    <div class="container mx-auto flex items-start gap-x-[30px] mt-[20px]">
+      <div class="categories w-[50%] lg:w-[27%]">
+        <div
+          class="py-[10px] bg-[#333333] text-white text-center flex flex items-center justify-center gap-x-[15px]"
+        >
+          <ion-icon name="list"></ion-icon>
+          <span> Danh mục SP </span>
+        </div>
+        <div
+          class="border text-[15px] overflow-y-scroll max-h-[435px]"
+          id="style-1"
+        >
+          <div class="border-b py-[10px] pl-[15px]">
+            Bulong – Ốc vít – bolts
+          </div>
+          <div class="border-b py-[10px] pl-[15px]">Bulong hoa thị</div>
+          <div class="border-b py-[10px] pl-[15px]">
+            Chốt đẩy – Ty đẩy SKD61
+          </div>
+          <div class="border-b py-[10px] pl-[15px]">Dầu mỡ hóa chất</div>
+          <div class="border-b py-[10px] pl-[15px]">Đồng nhôm các loại</div>
+          <div class="border-b py-[10px] pl-[15px]">Dụng cụ cầm tay Sata</div>
+          <div class="border-b py-[10px] pl-[15px]">Dụng cụ đồ mài</div>
+          <div class="border-b py-[10px] pl-[15px]">Dụng cụ khí nén</div>
+          <div class="border-b py-[10px] pl-[15px]">Dụng Cụ Phòng Khuôn</div>
+          <div class="border-b py-[10px] pl-[15px]">
+            Lò xo – Khóa khuôn (Parting Lock)
+          </div>
+          <div class="border-b py-[10px] pl-[15px]">Lưỡi dao</div>
+          <div class="border-b py-[10px] pl-[15px]">Mitutoyo</div>
+          <div class="border-b py-[10px] pl-[15px]">
+            Mũi Khoan – Phay – Taro
+          </div>
+          <div class="border-b py-[10px] pl-[15px]">Nút Nhấn – Công Tắc</div>
+          <div class="border-b py-[10px] pl-[15px]">Omron</div>
+          <div class="border-b py-[10px] pl-[15px]">Slider Product</div>
+        </div>
+      </div>
+      <div class="swiper flex-1">
+        <div class="swiper mySwiper w-full relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/dot1.jpg"
+                class="w-full h-auto object-cover"
+                alt="dot1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/dot2.jpg"
+                class="w-full h-auto object-cover"
+                alt="dot2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/dot3.jpg"
+                class="w-full h-auto object-cover"
+                alt="dot3"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute right-[70px] top-[50px] flex flex-row-reverse items-center"
+          >
+            <div class="swiper-button-next bg-[#BAC0C2] text-white w-[40px]">
+              <ion-icon name="chevron-back" class="text-[20px]"></ion-icon>
+            </div>
+            <div class="swiper-button-prev bg-[#BAC0C2] text-white w-[40px]">
+              <ion-icon name="chevron-forward" class="text-[20px]"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container mx-auto grid grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-[20px] my-[40px]"
+    >
+      <div class="flex flex items-start gap-x-[10px] flex-1">
+        <ion-icon name="car" class="text-[#27B6D4] text-[45px]"></ion-icon>
+        <div class="flex flex-col gap-y-[5px]">
+          <span class="text-[#818384] font-bold"> Miễn phí giao hàng </span>
+          <span class="text-[14px]"> Miễn phí giao hàng TP Bắc Ninh </span>
+        </div>
+      </div>
+      <div class="flex flex items-start gap-x-[10px] flex-1">
+        <ion-icon
+          name="chatbubbles"
+          class="text-[#27B6D4] text-[45px]"
+        ></ion-icon>
+        <div class="flex flex-col gap-y-[5px]">
+          <span class="text-[#818384] font-bold">Tư vấn 24/7 </span>
+          <span class="text-[14px]">Hỗ trợ tư vẫn online 24/7 </span>
+        </div>
+      </div>
+      <div class="flex flex items-start gap-x-[10px] flex-1">
+        <ion-icon
+          name="star-outline"
+          class="text-[#27B6D4] text-[45px]"
+        ></ion-icon>
+        <div class="flex flex-col gap-y-[5px]">
+          <span class="text-[#818384] font-bold">Giá cạnh tranh </span>
+          <span class="text-[14px]">Giá cả cạnh tranh, nhiều ưu đãi </span>
+        </div>
+      </div>
+      <div class="flex flex items-start gap-x-[10px] flex-1">
+        <ion-icon
+          name="card-outline"
+          class="text-[#27B6D4] text-[65px]"
+        ></ion-icon>
+        <div class="flex flex-col gap-y-[5px]">
+          <span class="text-[#818384] font-bold"> Thanh toán dễ dàng </span>
+          <span class="text-[14px]"
+            >Thanh toán dễ dàng Hỗ trợ nhiều phương thức thanh toán</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <div>
+        <div class="swiper mySwiperProduct">
+          <div>
+            <span class="text-[#3D3D49] font-bold uppercase text-[20px]"
+              >Sản phẩm hot</span
+            >
+          </div>
+          <div class="flex items-center justify-between mb-[10px]">
+            <span> Tổng hợp top sản phẩm bán chạy tại </span>
+            <div class="flex items-center gap-x-[5px]">
+              <div class="product-button-next border flex items-center p-[6px]">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </div>
+              <div class="product-button-prev border flex items-center p-[6px]">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide border">
+              <img src="./images/pd1.jpg" alt="pd" />
+              <div class="pb-[15px]">
+                <div class="text-center text-[18px] my-[8px]">
+                  Kìm tuốt dây SATA 91201
+                </div>
+                <div class="card-action flex items-center text-[14px]">
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="cart"></ion-icon>
+                      <span> Thêm vào </span>
+                    </div>
+                    <span> giỏ hàng </span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="heart"></ion-icon>
+                      <span> Add to </span>
+                    </div>
+
+                    <span> wish list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide border">
+              <img src="./images/pd2.jpg" alt="pd" />
+              <div class="pb-[15px]">
+                <div class="text-center text-[18px] my-[8px]">
+                  Kìm tuốt dây SATA 91201
+                </div>
+                <div class="card-action flex items-center text-[14px]">
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="cart"></ion-icon>
+                      <span> Thêm vào </span>
+                    </div>
+                    <span> giỏ hàng </span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="heart"></ion-icon>
+                      <span> Add to </span>
+                    </div>
+
+                    <span> wish list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide border">
+              <img src="./images/pd3.jpg" alt="pd" />
+              <div class="pb-[15px]">
+                <div class="text-center text-[18px] my-[8px]">
+                  Kìm tuốt dây SATA 91201
+                </div>
+                <div class="card-action flex items-center text-[14px]">
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="cart"></ion-icon>
+                      <span> Thêm vào </span>
+                    </div>
+                    <span> giỏ hàng </span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="heart"></ion-icon>
+                      <span> Add to </span>
+                    </div>
+
+                    <span> wish list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide border">
+              <img src="./images/pd4.jpg" alt="pd" />
+              <div class="pb-[15px]">
+                <div class="text-center text-[18px] my-[8px]">
+                  Kìm tuốt dây SATA 91201
+                </div>
+                <div class="card-action flex items-center text-[14px]">
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="cart"></ion-icon>
+                      <span> Thêm vào </span>
+                    </div>
+                    <span> giỏ hàng </span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="heart"></ion-icon>
+                      <span> Add to </span>
+                    </div>
+
+                    <span> wish list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide border">
+              <img src="./images/pd5.jpg" alt="pd" />
+              <div class="pb-[15px]">
+                <div class="text-center text-[18px] my-[8px]">
+                  Kìm tuốt dây SATA 91201
+                </div>
+                <div class="card-action flex items-center text-[14px]">
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="cart"></ion-icon>
+                      <span> Thêm vào </span>
+                    </div>
+                    <span> giỏ hàng </span>
+                  </div>
+                  <div class="flex flex-col items-center flex-1">
+                    <div class="flex items-center gap-x-[5px]">
+                      <ion-icon name="heart"></ion-icon>
+                      <span> Add to </span>
+                    </div>
+
+                    <span> wish list </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex items-center flex-col lg:flex-row gap-[25px] container mx-auto my-[40px]"
+    >
+      <div class="flex-1 relative">
+        <img
+          src="./images/sec1.jpg"
+          class="w-full h-auto object-cover"
+          alt=""
+        />
+        <div
+          class="bg-[#ffffffcc] absolute bottom-[10%] left-1/2 translate-x-[-50%] px-[20px] py-[20px] w-[80%]"
+        >
+          <span
+            class="text-[#3d3d3d] font-bold uppercase text-[20px] text-center block"
+          >
+            Bulong - Ốc vít - bolts</span
+          >
+          <a class="flex items-center justify-center text-[#E76166]">
+            <span>Xem Danh Sách Sản Phẩm</span>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 relative">
+        <img
+          src="./images/sec2.jpg"
+          class="w-full h-auto object-cover"
+          alt=""
+        />
+        <div
+          class="bg-[#ffffffcc] absolute bottom-[10%] left-1/2 translate-x-[-50%] px-[20px] py-[20px] w-[80%]"
+        >
+          <span
+            class="text-[#3d3d3d] font-bold uppercase text-[20px] text-center block"
+          >
+            OMRON</span
+          >
+          <a class="flex items-center justify-center text-[#E76166]">
+            <span>Xem Danh Sách Sản Phẩm</span>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 relative">
+        <img
+          src="./images/sec3.jpg"
+          class="w-full h-auto object-cover"
+          alt=""
+        />
+        <div
+          class="bg-[#ffffffcc] absolute bottom-[10%] left-1/2 translate-x-[-50%] px-[20px] py-[20px] w-[80%]"
+        >
+          <span
+            class="text-[#3d3d3d] font-bold uppercase text-[20px] text-center block"
+          >
+            MITUTOYO</span
+          >
+          <a class="flex items-center justify-center text-[#E76166]">
+            <span>Xem Danh Sách Sản Phẩm</span>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="flex flex-col mb-[10px]">
+        <span class="text-[#3D3D49] font-bold uppercase text-[20px]"
+          >DỤNG CỤ PHÒNG KHUÔN</span
+        >
+        <span> Tổng hợp các loại dụng cụ dùng cho phòng khuôn </span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto flex flex-col mt-[150px] mb-[120px]">
+      <span class="text-[32px] lg:text-[52px] text-[#333333] font-bold">
+        50% OFF MITUTOYO
+      </span>
+      <button
+        class="w-max bg-[#27B6D4] text-white font-bold text-[18px] lg:text-[25px] px-[20px] py-[10px]"
+      >
+        Mua ngay
+      </button>
+    </div>
+    <div class="container mx-auto mb-[30px]">
+      <div class="flex flex-col mb-[10px]">
+        <span class="text-[#3D3D49] font-bold uppercase text-[20px]"
+          >DẦU MỠ HÓA CHẤT</span
+        >
+        <span> Tổng hợp dầu mỡ hóa chất cho ngành công nghiệp </span>
+      </div>
+      <div
+        class="grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]"
+      >
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border">
+          <img src="./images/pd1.jpg" alt="pd" />
+          <div class="pb-[15px]">
+            <div class="text-center text-[18px] my-[8px]">
+              Kìm tuốt dây SATA 91201
+            </div>
+            <div class="card-action flex items-center text-[14px]">
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="cart"></ion-icon>
+                  <span> Thêm vào </span>
+                </div>
+                <span> giỏ hàng </span>
+              </div>
+              <div class="flex flex-col items-center flex-1">
+                <div class="flex items-center gap-x-[5px]">
+                  <ion-icon name="heart"></ion-icon>
+                  <span> Add to </span>
+                </div>
+
+                <span> wish list </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <div class="flex flex-col mb-[10px]">
+        <span class="text-[#3D3D49] font-bold uppercase text-[20px]"
+          >TIN TỨC NỔI BẬT</span
+        >
+        <span> Tổng hợp tin tức nổi bật hàng ngày tại An Phước </span>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-x-[50px]">
+        <div>
+          <div class="flex flex-col">
+            <div class="relative flex-1">
+              <img src="./images/blog-1.jpg" class="w-full" alt="" />
+              <div
+                class="absolute left-0 top-0 bg-[#27B6D4] text-white flex flex-col items-center w-max p-[10px]"
+              >
+                <span class="uppercase font-bold"> TH1 </span>
+                <span> 05 </span>
+              </div>
+            </div>
+            <div class="bg-[#F6F6F6] text-[#9c9c9c] flex-1 px-[30px] py-[15px]">
+              <span class="text-[#333333] text-[25px] font-bold">
+                Kỹ thuật ghép mộng gỗ – Các loại mộng gỗ cơ bản
+              </span>
+              <div class="flex gap-x-[20px] my-[5px]">
+                <div>
+                  <ion-icon name="person"></ion-icon>
+                  <span> Admin </span>
+                </div>
+                <div>
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <span> Comments </span>
+                </div>
+              </div>
+              <span>
+                Hiện nay, đồ gỗ nội thất ngày càng được ưa chuộng trong mỗi gia
+                đình, với thiết kế đa dạng, gần gũi với thiên nhiên nhưng cũng
+                toát lên vẻ đầy sang trọng cho ngôi nhà của bạn. Thủa xa xưa, để
+                ghép được gỗ chúng ta phải sử dụng đinh, keo để gắn
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-[30px]">
+          <div class="flex gap-x-[20px]">
+            <div class="relative">
+              <img
+                src="./images/blog-2.jpg"
+                class="w-[134px] h-[134px] object-cover"
+                alt=""
+              />
+              <div
+                class="absolute left-0 top-0 bg-[#27B6D4] text-white flex flex-col items-center w-max p-[10px]"
+              >
+                <span class="uppercase font-bold"> TH1 </span>
+                <span> 05 </span>
+              </div>
+            </div>
+            <div class="flex-1 text-[#9c9c9c] text-[13px]">
+              <span class="text-[#333333] text-[25px] font-bold">
+                Kỹ thuật ghép mộng gỗ – Các loại mộng gỗ cơ bản
+              </span>
+              <div class="flex gap-x-[20px] my-[5px]">
+                <div>
+                  <ion-icon name="person"></ion-icon>
+                  <span> Admin </span>
+                </div>
+                <div>
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <span> Comments </span>
+                </div>
+              </div>
+              <span>
+                Hiện nay, đồ gỗ nội thất ngày càng được ưa chuộng trong mỗi gia
+                đình, với thiết kế đa dạng, gần gũi với thiên nhiên nhưng cũng
+                toát lên vẻ đầy sang trọng cho ngôi nhà của bạn. Thủa xa xưa, để
+                ghép được gỗ chúng ta phải sử dụng đinh, keo để gắn
+              </span>
+            </div>
+          </div>
+          <div class="flex gap-x-[20px]">
+            <div class="relative">
+              <img
+                src="./images/blog-2.jpg"
+                class="w-[134px] h-[134px] object-cover"
+                alt=""
+              />
+              <div
+                class="absolute left-0 top-0 bg-[#27B6D4] text-white flex flex-col items-center w-max p-[10px]"
+              >
+                <span class="uppercase font-bold"> TH1 </span>
+                <span> 05 </span>
+              </div>
+            </div>
+            <div class="flex-1 text-[#9c9c9c] text-[13px]">
+              <span class="text-[#333333] text-[25px] font-bold">
+                Kỹ thuật ghép mộng gỗ – Các loại mộng gỗ cơ bản
+              </span>
+              <div class="flex gap-x-[20px] my-[5px]">
+                <div>
+                  <ion-icon name="person"></ion-icon>
+                  <span> Admin </span>
+                </div>
+                <div>
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <span> Comments </span>
+                </div>
+              </div>
+              <span>
+                Hiện nay, đồ gỗ nội thất ngày càng được ưa chuộng trong mỗi gia
+                đình, với thiết kế đa dạng, gần gũi với thiên nhiên nhưng cũng
+                toát lên vẻ đầy sang trọng cho ngôi nhà của bạn. Thủa xa xưa, để
+                ghép được gỗ chúng ta phải sử dụng đinh, keo để gắn
+              </span>
+            </div>
+          </div>
+          <div class="flex gap-x-[20px]">
+            <div class="relative">
+              <img
+                src="./images/blog-2.jpg"
+                class="w-[134px] h-[134px] object-cover"
+                alt=""
+              />
+              <div
+                class="absolute left-0 top-0 bg-[#27B6D4] text-white flex flex-col items-center w-max p-[10px]"
+              >
+                <span class="uppercase font-bold"> TH1 </span>
+                <span> 05 </span>
+              </div>
+            </div>
+            <div class="flex-1 text-[#9c9c9c] text-[13px]">
+              <span class="text-[#333333] text-[25px] font-bold">
+                Kỹ thuật ghép mộng gỗ – Các loại mộng gỗ cơ bản
+              </span>
+              <div class="flex gap-x-[20px] my-[5px]">
+                <div>
+                  <ion-icon name="person"></ion-icon>
+                  <span> Admin </span>
+                </div>
+                <div>
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <span> Comments </span>
+                </div>
+              </div>
+              <span>
+                Hiện nay, đồ gỗ nội thất ngày càng được ưa chuộng trong mỗi gia
+                đình, với thiết kế đa dạng, gần gũi với thiên nhiên nhưng cũng
+                toát lên vẻ đầy sang trọng cho ngôi nhà của bạn. Thủa xa xưa, để
+                ghép được gỗ chúng ta phải sử dụng đinh, keo để gắn
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+        },
+        loop: true,
+      });
+
+      var swiper = new Swiper(".mySwiperProduct", {
+        navigation: {
+          nextEl: ".product-button-next",
+          prevEl: ".product-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+
+        spaceBetween: 30,
+      });
+    </script>
+  </body>
+</html>
